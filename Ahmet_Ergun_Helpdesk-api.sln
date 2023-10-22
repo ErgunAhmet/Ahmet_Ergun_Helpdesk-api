@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ahmet_Ergun_Helpdesk-api", "Ahmet_Ergun_Helpdesk-api\Ahmet_Ergun_Helpdesk-api.csproj", "{358DC0AB-6A59-4E1A-B07F-32FAC7442027}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{A0B8B89E-84CE-48DE-8C7A-A5F986E39507}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{19F8DEF2-95D7-4D1D-A8B7-8BD6512681AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpdesk-api.Core", "Helpdesk-api.Core\Helpdesk-api.Core.csproj", "{CB6D80FE-881B-4C9B-9806-C5CA94117E23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpdesk-api.Model", "Helpdesk-api.Model\Helpdesk-api.Model.csproj", "{F974A9C2-4C62-4F87-BA6D-5126553E3DFB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7716FDA8-566D-415A-9306-39C16B2D6D20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpdesk-api.Dto", "Helpdesk-api.Dto\Helpdesk-api.Dto.csproj", "{ADC908CA-8C99-4D06-94F2-A730D6505964}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpdesk-api.Services", "Helpdesk-api.Services\Helpdesk-api.Services.csproj", "{F06479A8-4B20-4E09-973A-ED661DEC2074}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{358DC0AB-6A59-4E1A-B07F-32FAC7442027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{358DC0AB-6A59-4E1A-B07F-32FAC7442027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{358DC0AB-6A59-4E1A-B07F-32FAC7442027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{358DC0AB-6A59-4E1A-B07F-32FAC7442027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB6D80FE-881B-4C9B-9806-C5CA94117E23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB6D80FE-881B-4C9B-9806-C5CA94117E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB6D80FE-881B-4C9B-9806-C5CA94117E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB6D80FE-881B-4C9B-9806-C5CA94117E23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F974A9C2-4C62-4F87-BA6D-5126553E3DFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F974A9C2-4C62-4F87-BA6D-5126553E3DFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F974A9C2-4C62-4F87-BA6D-5126553E3DFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F974A9C2-4C62-4F87-BA6D-5126553E3DFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADC908CA-8C99-4D06-94F2-A730D6505964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC908CA-8C99-4D06-94F2-A730D6505964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC908CA-8C99-4D06-94F2-A730D6505964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC908CA-8C99-4D06-94F2-A730D6505964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F06479A8-4B20-4E09-973A-ED661DEC2074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F06479A8-4B20-4E09-973A-ED661DEC2074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F06479A8-4B20-4E09-973A-ED661DEC2074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F06479A8-4B20-4E09-973A-ED661DEC2074}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{358DC0AB-6A59-4E1A-B07F-32FAC7442027} = {A0B8B89E-84CE-48DE-8C7A-A5F986E39507}
+		{CB6D80FE-881B-4C9B-9806-C5CA94117E23} = {19F8DEF2-95D7-4D1D-A8B7-8BD6512681AD}
+		{F974A9C2-4C62-4F87-BA6D-5126553E3DFB} = {19F8DEF2-95D7-4D1D-A8B7-8BD6512681AD}
+		{ADC908CA-8C99-4D06-94F2-A730D6505964} = {7716FDA8-566D-415A-9306-39C16B2D6D20}
+		{F06479A8-4B20-4E09-973A-ED661DEC2074} = {7716FDA8-566D-415A-9306-39C16B2D6D20}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11CD7087-DCA7-4C1A-89D0-502F3D2102BE}
+	EndGlobalSection
+EndGlobal
