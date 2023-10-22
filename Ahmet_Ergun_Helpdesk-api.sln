@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpdesk-api.Dto", "Helpdes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpdesk-api.Services", "Helpdesk-api.Services\Helpdesk-api.Services.csproj", "{F06479A8-4B20-4E09-973A-ED661DEC2074}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpdesk-api.Services.Model", "Helpdesk-api.Services.Model\Helpdesk-api.Services.Model.csproj", "{46418BB1-7255-4009-A170-FE8E3CFB7E3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{F06479A8-4B20-4E09-973A-ED661DEC2074}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F06479A8-4B20-4E09-973A-ED661DEC2074}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F06479A8-4B20-4E09-973A-ED661DEC2074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46418BB1-7255-4009-A170-FE8E3CFB7E3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46418BB1-7255-4009-A170-FE8E3CFB7E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46418BB1-7255-4009-A170-FE8E3CFB7E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46418BB1-7255-4009-A170-FE8E3CFB7E3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{F974A9C2-4C62-4F87-BA6D-5126553E3DFB} = {19F8DEF2-95D7-4D1D-A8B7-8BD6512681AD}
 		{ADC908CA-8C99-4D06-94F2-A730D6505964} = {7716FDA8-566D-415A-9306-39C16B2D6D20}
 		{F06479A8-4B20-4E09-973A-ED661DEC2074} = {7716FDA8-566D-415A-9306-39C16B2D6D20}
+		{46418BB1-7255-4009-A170-FE8E3CFB7E3E} = {7716FDA8-566D-415A-9306-39C16B2D6D20}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {11CD7087-DCA7-4C1A-89D0-502F3D2102BE}
