@@ -30,5 +30,7 @@ namespace Helpdesk_api.Services.Model.Extensions
                 Description = $"We were unable to find the requested {entity}."
             });
         }
+
+
     }
 }

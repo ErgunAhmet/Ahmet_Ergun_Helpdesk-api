@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Helpdesk-api.Model\Helpdesk-api.Model.csproj" />
+  </ItemGroup>
+
 </Project>

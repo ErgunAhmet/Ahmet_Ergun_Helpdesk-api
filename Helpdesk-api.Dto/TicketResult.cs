@@ -12,5 +12,6 @@ namespace Helpdesk_api.Dto
         public string TicketTitle { get; set; }
         public string TicketDescription { get; set; }
         public int? ResponsibleEmployeeId { get; set; }
+        public string? Status { get; set; }
     }
 }

@@ -29,7 +29,8 @@ namespace Helpdesk_api.Services.Extensions
                 Id = t.Id,
                 TicketTitle = t.TicketTitle,
                 TicketDescription = t.TicketDescription,
-                ResponsibleEmployeeId = t.ResponsibleEmployeeId
+                ResponsibleEmployeeId = t.ResponsibleEmployeeId,
+                Status = t.Status.ToString()
             });
         }
     }

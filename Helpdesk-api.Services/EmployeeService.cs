@@ -82,5 +82,20 @@ namespace Helpdesk_api.Services
 
             return new ServiceResult();
         }
+
+        public async Task<ServiceResult> DeleteResolvedTicketsAsync(int employeeId)
+        {
+            var resolvedTickets = await _dbContext.Tickets
+                .Where(t => t.ResponsibleEmployeeId == employeeId && t.Status == TicketStatus.Resolved)
+                .ToListAsync();
+
+            if (resolvedTickets.Count == 0)
+                return new ServiceResult().NotFound("Resolved Tickets");
+
+            _dbContext.Tickets.RemoveRange(resolvedTickets);
+            await _dbContext.SaveChangesAsync();
+
+            return new ServiceResult();
+        }
     }
 }

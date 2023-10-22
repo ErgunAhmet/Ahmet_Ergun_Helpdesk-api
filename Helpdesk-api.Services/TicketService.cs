@@ -92,20 +92,15 @@ namespace Helpdesk_api.Services
             return new ServiceResult();
         }
 
-        //public async Task<ServiceResult> AssignTicketToEmployeeAsync(int ticketId, int employeeId)
-        //{
-        //    var ticket = await _dbContext.Tickets.FindAsync(ticketId);
-        //    if (ticket == null)
-        //        throw new NotFoundException("Ticket not found");
+        public async Task<ServiceResult> UpdateTicketStatusAsync(int ticketId, TicketStatus status)
+        {
+            var ticket = await _dbContext.Tickets.FindAsync(ticketId);
+            if (ticket == null)
+                return new ServiceResult().NotFound("Ticket");
+            ticket.Status = status;
+            await _dbContext.SaveChangesAsync();
 
-        //    var employee = await _dbContext.Employees.FindAsync(employeeId);
-        //    if (employee == null)
-        //        throw new NotFoundException("Employee not found");
-
-        //    ticket.ResponsibleEmployeeId = employee.Id;
-        //    await _dbContext.SaveChangesAsync();
-
-
-        //}
+            return new ServiceResult();
+        }
     }
 }

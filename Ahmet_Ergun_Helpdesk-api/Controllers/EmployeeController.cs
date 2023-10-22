@@ -10,10 +10,12 @@ namespace Ahmet_Ergun_Helpdesk_api.Controllers
     public class EmployeeController : ControllerBase
     {
         private readonly EmployeeService _employeeService;
+        private readonly TicketService _ticketService;
 
-        public EmployeeController(EmployeeService employeeService)
+        public EmployeeController(EmployeeService employeeService, TicketService ticketService)
         {
             _employeeService = employeeService;
+            _ticketService = ticketService;
         }
 
         [HttpGet]
@@ -53,6 +55,32 @@ namespace Ahmet_Ergun_Helpdesk_api.Controllers
         public async Task<IActionResult> DeleteEmployee([FromRoute] int id)
         {
             var serviceResult = await _employeeService.DeleteEmployeeAsync(id);
+            return Ok(serviceResult);
+        }
+
+        [HttpPut("tickets/{employeeId:int}/status")]
+        public async Task<IActionResult> UpdateTicketStatusForEmployee([FromRoute] int employeeId, [FromBody] EmployeeUpdateTicketStatusRequest model)
+        {
+            var serviceResult = await _ticketService.UpdateTicketStatusAsync(model.TicketId, model.Status); ;
+
+            if (!serviceResult.IsSuccess)
+            {
+                return BadRequest(serviceResult);
+            }
+
+            return Ok(serviceResult);
+        }
+
+        [HttpDelete("{employeeId:int}/tickets/delete-resolved")]
+        public async Task<IActionResult> DeleteResolvedTickets([FromRoute] int employeeId)
+        {
+            var serviceResult = await _employeeService.DeleteResolvedTicketsAsync(employeeId);
+
+            if (!serviceResult.IsSuccess)
+            {
+                return BadRequest(serviceResult);
+            }
+
             return Ok(serviceResult);
         }
     }

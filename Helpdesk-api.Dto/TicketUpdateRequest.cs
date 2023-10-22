@@ -8,8 +8,8 @@ namespace Helpdesk_api.Dto
 {
     public class TicketUpdateRequest
     {
-        public string TicketTitle { get; set; }
-        public string TicketDescription { get; set; }
+        public string? TicketTitle { get; set; }
+        public string? TicketDescription { get; set; }
         public int? ResponsibleEmployeeId { get; set; }
     }
 }
